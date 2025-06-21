@@ -1,0 +1,161 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:paddingTop="100dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:gravity="center_horizontal">
+
+            <!-- App Icon -->
+            <ImageView
+                android:id="@+id/appIcon"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginBottom="16dp"
+                android:src="@drawable/icon"
+                android:contentDescription="App Icon" />
+
+            <!-- Welcome Title -->
+            <TextView
+                android:id="@+id/welcomeTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:text="Welcome"
+                android:textColor="#000000"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <!-- Email Input -->
+            <EditText
+                android:id="@+id/emailInput"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/rounded_edittext"
+                android:hint="Email address"
+                android:inputType="textEmailAddress"
+                android:padding="12dp"
+                android:textColor="#000000"
+                android:textColorHint="#767575"
+                android:textSize="16sp" />
+
+            <!-- Password Input -->
+            <EditText
+                android:id="@+id/passwordInput"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/rounded_edittext"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="12dp"
+                android:textColor="#000000"
+                android:textColorHint="#767575"
+                android:textSize="16sp" />
+
+            <!-- Continue Button -->
+            <Button
+                android:id="@+id/continueButton"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#000000"
+                android:text="Continue"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <!-- Sign Up Link -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Don't have an account?"
+                    android:textColor="#777777"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/signUpLink"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Sign up"
+                    android:textColor="#3F51B5"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Divider -->
+            <View
+                android:layout_width="300dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="8dp"
+                android:background="#DDDDDD" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="OR"
+                android:textColor="#777777"
+                android:textSize="14sp" />
+
+            <!-- Other Login Options -->
+            <Button
+                android:id="@+id/phoneButton"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="#000000"
+                android:text="📞 Continue with phone"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/googleButton"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="#000000"
+                android:text="🔵 Continue with Google"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/microsoftButton"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="#000000"
+                android:text="🟦 Continue with Microsoft Account"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/appleButton"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="#000000"
+                android:text="🍏 Continue with Apple"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+</ScrollView>

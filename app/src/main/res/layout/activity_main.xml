@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <!-- Main Content ScrollView -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Header moved out of container -->
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="24dp"
+                android:paddingBottom="8dp"
+                android:text="Equipment and Labor Rentals"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingBottom="16dp"
+                android:text="Rent machinery and hire skilled labor for your farm operations"
+                android:textColor="#666666"
+                android:textSize="16sp" />
+
+            <!-- Container only for dynamic items -->
+            <LinearLayout
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Bottom Navigation Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/rounded_spinner"
+        android:elevation="6dp"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/homeButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            android:backgroundTint="#FFFFFF"
+            android:padding="10dp"
+            android:text="🏠 Home"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/viewCartButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            android:backgroundTint="#FFFFFF"
+            android:padding="10dp"
+            android:text="🛒 Cart"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            android:backgroundTint="#FFFFFF"
+            android:padding="10dp"
+            android:text="📜 Orders"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

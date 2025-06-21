@@ -1,0 +1,86 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_edittext"
+    android:padding="16dp"
+    android:layout_marginBottom="12dp"
+    android:elevation="4dp">
+
+<TextView
+android:id="@+id/manageOrderId"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="Order ID"
+android:textStyle="bold"
+android:textColor="#000000"
+android:textSize="16sp" />
+
+<TextView
+android:id="@+id/manageOrderDate"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="Date"
+android:textColor="#000000"
+android:textSize="14sp" />
+
+<TextView
+android:id="@+id/manageAddress"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="Address"
+android:textColor="#000000"
+android:textSize="14sp" />
+
+<TextView
+android:id="@+id/managePayment"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="Payment"
+android:textColor="#000000"
+android:textSize="14sp" />
+
+<TextView
+android:id="@+id/manageExpectedDelivery"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="Expected"
+android:textColor="#000000"
+android:textSize="14sp" />
+
+<TextView
+android:id="@+id/manageStatus"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="Status"
+android:textColor="#000000"
+android:textSize="14sp" />
+
+<TextView
+android:id="@+id/manageItems"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="Items"
+android:textColor="#000000"
+android:textSize="14sp"
+android:layout_marginTop="4dp" />
+
+<Spinner
+android:id="@+id/statusSpinner"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginTop="8dp"
+    android:background="@drawable/rounded_edittext"/> <!-- Styled background like EditText -->
+
+<Button
+android:id="@+id/updateStatusBtn"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="Update Status"
+android:layout_marginTop="8dp"
+android:backgroundTint="#000000"
+android:textColor="#FFFFFF"
+android:textSize="16sp" />
+
+    </LinearLayout>

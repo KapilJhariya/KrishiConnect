@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "644380522564",
+    "firebase_url": "https://krishiconnect-e5140-default-rtdb.firebaseio.com",
+    "project_id": "krishiconnect-e5140",
+    "storage_bucket": "krishiconnect-e5140.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:644380522564:android:285392ad946685667a6411",
+        "android_client_info": {
+          "package_name": "com.example.krishiconnect"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_qeRAtzhUeQC3GKglqjbB3QOSwtmZKNQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

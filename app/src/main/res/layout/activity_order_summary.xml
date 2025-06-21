@@ -1,0 +1,150 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDFDFD"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Header -->
+        <TextView
+            android:id="@+id/summaryHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🧾 Order Summary"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:paddingTop="32dp"
+            android:paddingBottom="16dp" />
+
+        <!-- Order Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_card_bg"
+            android:padding="16dp"
+            android:elevation="4dp">
+
+            <TextView
+                android:id="@+id/orderIdText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order ID: #"
+                android:textColor="#444444"
+                android:textSize="14sp"
+                android:textStyle="italic"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/buyerNameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Buyer: "
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/sellerNameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Seller: "
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/itemSummary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Items:"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp" />
+
+            <LinearLayout
+                android:id="@+id/itemListContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/amountSummary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Amount: ₹0"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/paymentSummary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Payment Mode: "
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/addressSummary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delivery Address: "
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/orderDateText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order Date: "
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/shippingText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Expected Delivery: "
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:layout_marginBottom="4dp" />
+
+        </LinearLayout>
+
+        <!-- Button -->
+<!--        <Button-->
+<!--            android:id="@+id/printReceipt"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="24dp"-->
+<!--            android:backgroundTint="#228B22"-->
+<!--            android:text="📄 Print Receipt"-->
+<!--            android:textColor="@android:color/white"-->
+<!--            android:textSize="16sp" />-->
+
+        <Button
+            android:id="@+id/homeButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#000000"
+            android:text="🏠 Home"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+</ScrollView>

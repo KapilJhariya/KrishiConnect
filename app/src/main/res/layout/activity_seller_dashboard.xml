@@ -1,0 +1,69 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seller's Dashboard"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="100dp" />
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome, User"
+        android:textColor="#228B22"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/addGoodsButton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#000000"
+        android:text="Add Items"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/manageItemsButton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#000000"
+        android:text="Manage Items"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/manageOrdersButton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#000000"
+        android:text="Manage Orders"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#F44336"
+        android:text="Logout"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+</LinearLayout>

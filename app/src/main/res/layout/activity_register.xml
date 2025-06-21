@@ -1,0 +1,125 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:fillViewport="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:padding="18dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp"
+            android:text="👤 Register"
+            android:textColor="#2E7D32"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- Name -->
+        <EditText
+            android:id="@+id/register_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/rounded_edittext"
+            android:hint="First Name"
+            android:padding="12dp"
+            android:textColor="#000000"
+            android:textColorHint="#767575" />
+
+        <EditText
+            android:id="@+id/register_surname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/rounded_edittext"
+            android:hint="Last Name"
+            android:padding="12dp"
+            android:textColor="#000000"
+            android:textColorHint="#767575" />
+
+        <!-- Email -->
+        <EditText
+            android:id="@+id/register_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/rounded_edittext"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+            android:textColor="#000000"
+            android:textColorHint="#767575" />
+
+        <!-- Password -->
+        <EditText
+            android:id="@+id/register_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/rounded_edittext"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:textColor="#000000"
+            android:textColorHint="#767575" />
+
+        <EditText
+            android:id="@+id/register_retype_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_edittext"
+            android:hint="Re-type Password"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:textColor="#000000"
+            android:textColorHint="#767575" />
+
+        <Spinner
+            android:id="@+id/user_type_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/spinner_background"
+            android:backgroundTint="#000000" />
+
+        <!-- Register button -->
+        <Button
+            android:id="@+id/register_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="#2E7D32"
+            android:text="Register"
+            android:textColor="#FFFFFF" />
+
+        <!-- Check Email Verified button -->
+        <Button
+            android:id="@+id/check_email_verified_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="#000000"
+            android:text="Check Email Verified"
+            android:textColor="#FFFFFF" />
+
+        <!-- Go to login button -->
+        <Button
+            android:id="@+id/goto_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#CCCCCC"
+            android:text="Go to Login"
+            android:textColor="#000000" />
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,95 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="Add New Item"
+            android:textColor="#000000"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/itemNameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_edittext"
+            android:hint="Item Name"
+            android:padding="12dp"
+            android:textColor="#000000"
+            android:textColorHint="#767575"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/itemDescInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_edittext"
+            android:hint="Description"
+            android:padding="12dp"
+            android:textColor="#000000"
+            android:textColorHint="#767575"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/itemPriceInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_edittext"
+            android:hint="Price"
+            android:inputType="numberDecimal"
+            android:padding="12dp"
+            android:textColor="#000000"
+            android:textColorHint="#767575"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/itemImageUrlInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_edittext"
+            android:hint="Image URL"
+            android:padding="12dp"
+            android:shadowColor="#020202"
+            android:textColor="#000000"
+            android:textColorHighlight="#000000"
+            android:textColorHint="#767575"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/itemCategorySpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/rounded_spinner"
+            android:paddingStart="6dp"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/addItemButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#000000"
+            android:text="Add Item"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</ScrollView>

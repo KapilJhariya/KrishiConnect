@@ -1,0 +1,179 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="8dp">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/titleHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="50dp"
+            android:paddingBottom="16dp"
+            android:text="Complete Your Order"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- Description -->
+        <TextView
+            android:id="@+id/orderDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your order is ready to be processed. You can generate a receipt for your records or complete the order and view it in your order history."
+            android:textColor="#666666"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Order Summary Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_card_bg"
+            android:orientation="vertical"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order Summary"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:paddingBottom="8dp" />
+
+            <!-- Total Items -->
+            <TextView
+                android:id="@+id/itemCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Items: 0"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:layout_marginBottom="4dp" />
+
+            <!-- Dynamic container for items -->
+            <LinearLayout
+                android:id="@+id/itemsContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delivery Charge: ₹7"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+            <!-- Total Amount -->
+            <TextView
+                android:id="@+id/orderTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Amount: ₹0"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <!-- Shipping Address -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Shipping Address"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/shippingAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_edittext"
+            android:padding="12dp"
+            android:hint="123 Farm Road, Farmington, IL 61234"
+            android:textColor="#000000"
+            android:textColorHint="#767575"
+            android:textSize="16sp" />
+
+        <!-- Payment Method -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Payment Method"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+
+        <Spinner
+            android:id="@+id/paymentSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edittext"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Shipping Date -->
+        <EditText
+            android:id="@+id/shippingDateInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_edittext"
+            android:drawableRight="@android:drawable/ic_menu_my_calendar"
+            android:focusable="false"
+            android:hint="Select Shipping Date"
+            android:inputType="none"
+            android:padding="12dp"
+            android:textColor="#000000"
+            android:textColorHint="#767575"
+            android:textSize="16sp" />
+
+        <!-- Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:weightSum="2"
+            android:layout_marginTop="16dp">
+
+            <Button
+                android:id="@+id/cancelButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Cancel"
+                android:backgroundTint="#CCCCCC"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/completeButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Place Order"
+                android:backgroundTint="#000000"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

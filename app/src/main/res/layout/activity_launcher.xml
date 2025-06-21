@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/homeTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🌾 Welcome to KrishiConnect"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#2E7D32"
+            android:paddingBottom="24dp"
+            android:fontFamily="sans-serif-medium" />
+
+        <!-- Crop Price Tracker -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginBottom="12dp"
+            android:background="@android:color/white"
+            android:elevation="4dp"
+            android:layout_gravity="center">
+
+            <TextView
+                android:text="📈 Crop Price Tracker"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="Monitor real-time market prices and trends for your crops."
+                android:textColor="#666666"
+                android:textSize="15sp"
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/viewPrices"
+                android:text="View Prices →"
+                android:textStyle="bold"
+                android:textColor="#228B22"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!-- Farming Supplies -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginBottom="12dp"
+            android:background="@android:color/white"
+            android:elevation="4dp">
+
+            <TextView
+                android:text="🛒 Farming Supplies"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="Purchase high-quality seeds, fertilizers, tools, and more."
+                android:textColor="#666666"
+                android:textSize="15sp"
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/shopNow"
+                android:text="Shop Now →"
+                android:textStyle="bold"
+                android:textColor="#228B22"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!-- Equipment Rental -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@android:color/white"
+            android:elevation="4dp">
+
+            <TextView
+                android:text="🚜 Equipment Rental"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="Rent machinery and labor for your farming operations."
+                android:textColor="#666666"
+                android:textSize="15sp"
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/rentEquipment"
+                android:text="Rent Equipment →"
+                android:textStyle="bold"
+                android:textColor="#228B22"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login" />
+
+    </LinearLayout>
+</ScrollView>
